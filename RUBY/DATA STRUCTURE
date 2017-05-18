@@ -1,0 +1,25 @@
+puts "add some text: "
+text = gets.chomp
+
+words = text.split(" ")
+frequencies = Hash.new(0)
+words.each { |word| frequencies[word] += 1 }
+frequencies = frequencies.sort_by { |a, e| e }
+frequencies.reverse!
+frequencies.each do |word, frequency|
+puts word + " " + frequency.to_s
+end
+
+
+=>
+add some text: 
+ bon jour c'est Bali !!! Comment va ?
+? 1
+va 1
+Comment 1
+!!! 1
+Bali 1
+c'est 1
+jour 1
+bon 1
+[["?", 1], ["va", 1], ["Comment", 1], ["!!!", 1], ["Bali", 1], ["c'est", 1], ["jour", 1], ["bon", 1]]
