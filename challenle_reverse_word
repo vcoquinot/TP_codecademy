@@ -1,0 +1,15 @@
+<?php
+$phrase = "hello world ";
+
+$reverse = strrev($phrase);
+echo "Ma phrase" . $phrase . "devient" .$reverse;
+?>
+
+
+<?php
+$sentence["a"] = "Hello";
+$sentence["b"] = "World";
+$sentence["c"] = "!";
+
+echo "ma phrase devient" . $sentence["c"] . $sentence["b"] . $sentence["a"];
+?>
