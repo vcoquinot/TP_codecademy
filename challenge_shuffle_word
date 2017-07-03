@@ -1,0 +1,10 @@
+<?php
+$mots = array (" Je", " tente", " de", " mixer", " les", " mots", " de", " ma", " phrase");
+shuffle ($mots);
+foreach ($mots as $mot) {
+	echo $mot;
+};
+
+unset ($mot);
+?>
+
